@@ -70,6 +70,7 @@ body {
     color: #000000;
     border-top: 1px dashed #000000;
     flex-grow: 1;
+    text-align: right;
   }
     
   .saveBtn {

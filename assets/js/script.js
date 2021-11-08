@@ -39,7 +39,7 @@ var loadTasks = function () {
 //Change time block hours
 var timeBlockHours = function () {
 
-  for (var i = 0; i < 8; i++) {
+  for (var i = 1; i < 10; i++) {
     var taskBlock = $("#task-"+i);
     if (currentHour > i) {
       $(taskBlock).addClass("past");

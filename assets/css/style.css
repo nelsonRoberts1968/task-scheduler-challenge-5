@@ -61,7 +61,6 @@ body {
   .description{
     white-space: pre-wrap;
     border-left: 1px solid black;
-    flex-grow: ;
 
   }
   .hour {

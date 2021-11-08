@@ -2,158 +2,141 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Work Day Scheduler</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Work Day Scheduler</title>
 </head>
 
 <body>
-  <header class="jumbotron">
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="currentDay" class="lead"></p>
-  </header>
-  <div class="container">
-    <!-- Timeblocks go here -->
-    <!-- Time Block first section-->
-    <section class="main-section">
-      <!--time block 1-->
-      <div class="time-block">
-        <!--time-->
-        <div class="hour"> 9AM
-        </div>
-        <!--Task description-->
-        <div class="description">
-          <P>task description</P>
-        </div>
-        <!--Save button-->
-        <div class="saveBtn">
-          <button> Save</button>
-        </div>
-      </div>
-      <!--time block 2-->
-      <div class="time-block">
-        <!--time-->
-        <div class="hour"> 10AM
-        </div>
-        <!--Task description-->
-        <div class="description">
-          <P>task description</P>
-        </div>
-        <!--Save button-->
-        <div class="saveBtn">
-          <button> Save</button>
-        </div>
+    <header class="jumbotron">
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+        <!-- Timeblocks go here -->
+        <!-- Time Block first section-->
+        <section class="main-section">
+            <!--time block 1-->
+            <div class="time-block">
+                <!--time-->
+                <div class="col-2 hour">9AM</div>
+                <!--Task description-->
+                <div class="col-9 description" id="task-1">
+                    <P id = "task-item-0"></P>
+                </div>
+                <!--Save button-->
+                <div class="col-1 saveBtn">
+                    <button class="saveBtn-Icon"> Save</button>
+                </div>
+            </div>
+            <!--time block 2-->
+            <div class="time-block">
+   
+                <div class="col-2 hour">10AM</div>
+     
+                <div class="col-9 description" id="task-2">
+                    <P id="task-item-1"></P>
+                </div>
+             
+                <div class="col-1 saveBtn">
+                    <button class="saveBtn-Icon"> Save</button>
+                </div>
+            </div>
+            <!--time block 3-->
+            <div class="time-block">
+                <div class="col-2 hour">11A</div>
+                <div class="col-9 description" id="task-3">
+                    <P id="task-item-3"></P>
+                </div>
+                <div class="col-1 saveBtn">
+                    <button class="saveBtn-Icon"> Save</button>
+                </div>
+            </div>
+            <!--time block 4-->
+            <div class="time-block">
+                <div class="col-2 hour"> 12PM
+                </div>
+                <div class="col-9 description" id="task-4">
+                    <P id="task-item-4"></P>
+                </div>
+                <div class="col-1 saveBtn">
+                    <button class="saveBtn-Icon"> Save</button>
+                </div>
+            </div>
+            <!--time block 5-->
+            <div class="time-block">
+                <div class="col-2 hour"> 1PM
+                </div>
+                <div class ="col-9 description" id="task-5">
+                    <P id="task-item-5"></P>
+                </div>
+                <div class="col-1 saveBtn">
+                    <button class="saveBtn-Icon"> Save</button>
+                </div>
+            </div>
+            <!--time block 6-->
+            <div class="time-block">
+                <div class="col-2 hour"> 2PM
+                </div>
+                <div class="col-9 description" id ="task-6">
+                    <P id="task-item-6"></P>
+                </div>
+                <div class="col-1 saveBtn">
+                    <button class="saveBtn-Icon"> Save</button>
+                </div>
+            </div>
+            <!--time block 7-->
+            <div class="time-block">
+                <div class="col-2 hour"> 3PM
+                </div>
+                <div class="col-9 description" id="task-7">
+                    <P id="task-item-7"></P>
+                </div>
 
-      </div>
-      <!--time block 3-->
-      <div class="time-block">
-        <!--time-->
-        <div class="hour"> 11AM
-        </div>
-        <!--Task description-->
-        <div class="description">
-          <P>task description</P>
-        </div>
-        <!--Save button-->
-        <div class="saveBtn">
-          <button> Save</button>
-        </div>
-      </div>
-      <!--time block 4-->
-      <div class="time-block">
-        <!--time-->
-        <div class="hour"> 12PM
-        </div>
-        <!--Task description-->
-        <div class="task-description">
-          <P>task description</P>
-        </div>
-        <!--Save button-->
-        <div class="saveBtn">
-          <button> Save</button>
-        </div>
-      </div>
-      <!--time block 5-->
-      <div class="time-block">
-        <!--time-->
-        <div class="hour"> 1PM
-        </div>
-        <!--Task description-->
-        <div class="description">
-          <P>task description</P>
-        </div>
-        <!--Save button-->
-        <div class="saveBtn">
-          <button> Save</button>
-        </div>
-      </div>
-      <!--time block 6-->
-      <div class="time-block">
-        <!--time-->
-        <div class="hour"> 2PM
-        </div>
-        <!--Task description-->
-        <div class="description">
-          <P>task description</P>
-        </div>
-        <!--Save button-->
-        <div class="saveBtn">
-          <button> Save</button>
-        </div>
-      </div>
-      <!--time block 7-->
-      <div class="time-block">
-        <!--time-->
-        <div class="hour"> 3PM
-        </div>
-        <!--Task description-->
-        <div class="description">
-          <P>task description</P>
-        </div>
-        <!--Save button-->
-        <div class="saveBtn">
-          <button> Save</button>
-        </div>
-      </div>
-      <!--time block 8-->
-      <div class="time-block">
-        <!--time-->
-        <div class="hour"> 4PM
-        </div>
-        <!--Task description-->
-        <div class="description">
-          <P>task description</P>
-        </div>
-        <!--Save button-->
-        <div class="saveBtn">
-          <button> Save</button>
-        </div>
-      </div>
-      <!--time block 9-->
-      <div class="time-block">
-        <!--time-->
-        <div class="hour"> 5PM
-        </div>
-        <!--Task description-->
-        <div class="description">
-          <P>task description</P>
-        </div>
-        <!--Save button-->
-        <div class="saveBtn">
-          <button> Save</button>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+                <div class="col-1 saveBtn">
+                    <button class="saveBtn-Icon"> Save</button>
+                </div>
+            </div>
+            <!--time block 8-->
+            <div class="time-block">
+
+                <div class="col-2 hour"> 4PM
+                </div>
+
+                <div class="col-9 description" id="task-8">
+                    <P id="task-item-8"></P>
+                </div>
+
+                <div class="col-1 saveBtn">
+                    <button class="saveBtn-Icon"> Save</button>
+                </div>
+            </div>
+            <!--time block 9-->
+            <div class="time-block">
+
+                <div class="col-2 hour"> 5PM
+                </div>
+
+                <div class="col-9 description" id="task-9">
+                    <P id="task-item-9"></P>
+                </div>
+
+                <div class="col-1 saveBtn">
+                    <button class="saveBtn-Icon"> Save</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

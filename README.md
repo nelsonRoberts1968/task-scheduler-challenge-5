@@ -10,3 +10,9 @@ If the user refreeshes the page the tasks will be stored locally and all previou
 You can update existing tasks by clicking on them and re-saving them with the save button.
 Each hour block will be colored in the follow ing order.Current hour(red), furure hours(green) and past hours (grey)
 
+* Main page load with current date format for Current Day
+![Curent day of the scheduled task](assets/images/current-date.png)
+
+* Main page showing other time blocks of current, past and future
+![Main page shoing all time block](assets/images/mainpage.png)
+

@@ -61,6 +61,8 @@ body {
   .description{
     white-space: pre-wrap;
     border-left: 1px solid black;
+    text-align: left;
+
 
   }
   .hour {
@@ -80,12 +82,13 @@ body {
   }
   .saveBtn-Icon{
     vertical-align: middle;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   
   .description p{
         height:90%;
         vertical-align: top;
         color:black;
+        vertical-align: top;
 
   }

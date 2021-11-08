@@ -4,6 +4,7 @@ var dateField = document.getElementById("currentDay");
 //Getting current timeusning moment.js
 var currentHour = moment().hour()-8;
 var tasks = [];
+//Getting items from local storage
 
 //Using mmoment library gets current date and time and Formats it in the order we want to display it.//
 var currentTime = moment();
@@ -16,9 +17,12 @@ $(".saveBtn").click(function () {
   //  alert("div is clicked");
   // console.log(currentHour);
   var index = $(".saveBtn").index(this);
-  tasks[index] = $(this).parent().find(".taskItem").text();
+  tasks[index] = $(this).parent().find(".task-item").text();
+  //var savedTasks = JSON.parse(localStorage.getItem(tasks));
   localStorage.setItem("tasks", JSON.stringify(tasks));
-  console.log(currentHour);
+
+  //console.log(currentHour);
+  console.log(savedTasks);
 
   //console.log(index);
   //timeBlockHours();

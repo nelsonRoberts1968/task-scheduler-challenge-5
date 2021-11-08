@@ -13,6 +13,9 @@ Each hour block will be colored in the follow ing order.Current hour(red), furur
 * Main page load with current date format for Current Day
 ![Curent day of the scheduled task](assets/images/current-date.png)
 
+* Main alnding page with all time blocks
+![current, past and future block](assets/images/mainpage.png)
+
 * Main page showing other time blocks of current, past and future
 ![Main page shoing all time block](assets/images/mainpage.png)
 

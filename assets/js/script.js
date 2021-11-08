@@ -12,6 +12,8 @@ var formattedCurrentDate = moment(currentTime).format("dddd, MMMM Do");
 //Set content value to the date field element*/
 dateField.textContent = formattedCurrentDate;
 
+
+
 //adding clicke lister to entire div instead of just a button
 $(".saveBtn").click(function () {
   //  alert("div is clicked");
@@ -19,14 +21,34 @@ $(".saveBtn").click(function () {
   var index = $(".saveBtn").index(this);
   tasks[index] = $(this).parent().find(".task-item").text();
   //var savedTasks = JSON.parse(localStorage.getItem(tasks));
-  localStorage.setItem("tasks", JSON.stringify(tasks));
-
+  window.localStorage.setItem("tasks", JSON.stringify(tasks));
+  retrieveTasks();
   //console.log(currentHour);
-  console.log(savedTasks);
+  //console.log(savedTasks);
 
   //console.log(index);
   //timeBlockHours();
 });
+
+// function retrieveRecords(){ //retrieves items in the localStorage
+//     var key = document.getElementById('retrieveKey').value; //gets key from user
+//     console.log("retrive records");
+//     var records = window.localStorage.getItem(key); //searches for the key in localStorage
+//     var paragraph = document.createElement("p");
+//     var infor = document.createTextNode(records);
+//     paragraph.appendChild(infor);
+//     var element = document.getElementById("retrieve");
+//     element.appendChild(paragraph);
+
+//retrieving tasks from local storage
+var retrieveTasks = function(){
+    var taskItem = document.getElementById('.task-item').value;
+    var listOfTasks = window.localStorage.getItem(taskItem);
+    var description = document.createElement(listOfTasks);
+    taskItem.append(description);
+
+}
+
 
 //Load tasks function
 var loadTasks = function () {
@@ -76,3 +98,4 @@ setInterval(function () {
 
 loadTasks();
 timeBlockHours();
+retrieveTasks();
